@@ -22,3 +22,9 @@ puts hash[:id]
 puts "Digite sua aposta diária, e tecle enter:"
 aposta = gets
 puts "Aposta - (#{aposta}) realizada pelo código = #{hash[:id]}"
+
+if aposta > 20
+    puts "voce acertou"
+else
+    puts "infelizmente nao foi desta vez"
+end

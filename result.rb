@@ -5,6 +5,16 @@ combinado = [13,3,22,true, "melhor do dia"]
 
 hash = {"id" => "melanodTTRR080020"}
 
+class Conjunto
+    def initialize(number)
+        @number = number
+    end
+
+    def imprime_bingo
+        puts "Helloo #{@nome}"
+    end
+end
+
 mensagem = <<~MENSAGEM
     Olá #{nome}
     Seja bem vindo(a) sua sorte de hoje é :
@@ -28,3 +38,9 @@ if aposta > 20
 else
     puts "infelizmente nao foi desta vez"
 end
+
+bingo = Conjunto.new(aposta)
+
+p bingo
+
+bingo.imprime_bingo

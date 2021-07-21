@@ -1,3 +1,7 @@
+require "./class/gambling"
+require "./class/elements"
+require "awesome_print"
+
 #Exibe bem vindo
 nome = "Caio"
 sorte = 13
@@ -41,6 +45,12 @@ end
 
 bingo = Conjunto.new(aposta)
 
+doubt = Gambling.new(aposta)
+loteria = Elements.new("lotofacil", doubt)
+
 p bingo
 
 bingo.imprime_bingo
+
+ap doubt
+ap loteria
